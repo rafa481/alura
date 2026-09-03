@@ -17,8 +17,7 @@
      padding: 16px;
     border: 5px solid;
     #F5DEB3;
- 
-       }
+    }
     main{
       background-color: #FFFFFF;  
          color: #FFD700;
@@ -59,7 +58,7 @@
   <button> 👍<span>0</span></button>
      <div>
       <article>
-       </article>
+        </article>
        <h2>Meu primeiro post</h2>
      </main>
  </body>
@@ -67,14 +66,18 @@
      const botoes = document.querySelector("button");
  
   botoes.forEach(function(botao){
-  botao.addEventListener("click", btaoClicado);
+     let curtiu = false;
+    botao.addEventListener("click", btaoClicado);
     function botaoClicado(){
     console.log("fui clicado");
    ler texto = botao.querySelector("span");
+       if (curtiu === false){
+
+           }
       texto.textContent++;
-    }
-  }}
-    </script>
-     </html>
+       }
+    }}
+ </script>
+ </html>
 
   
