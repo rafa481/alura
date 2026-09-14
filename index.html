@@ -18,7 +18,8 @@
     border: 5px solid;
     #F5DEB3;
     }
-    main{
+    
+     main {
       background-color: #FFFFFF;  
          color: #FFD700;
          text-aling: center;
@@ -26,18 +27,25 @@
          margin: 0 auto;
          padding: 16px;
     }
-     article {
-     display: flex;
-  
-     }
-  
-     img {
-       width: 80px;
-       height: 80px;
-     }
-   .artigo-autor {
-       font-weight: bold;
-   </style> 
+       img {
+        width: 80px;
+        height: 80px;
+        object-fit: cover;
+        flex-shrink: 0;
+   }
+    .conteudo-texto {
+       text-aling: left;
+  }
+
+     .botoes-container {
+        margin-top: 16px:
+  }  
+   button {
+     curson: pointer:
+     padding: 8px 12px;
+     font-size: 16px;
+   }  
+  </style> 
  </head>
 <body>
   <header>
@@ -59,22 +67,23 @@
     </div>
      </article>
     
-     </main>
- </body>
+    
+
    <script>
     const botoes = document.querySelectorAll("button");
  
-    botoes.forEach(function (botao){
+    botoes.forEach(function (botao) {
     let curtiu = false;
-    botao.addEventListener("click",botaoClicado);
-    function botaoClicado() {
-    let texto = botao.querySelector( "span" );
-    texto.textContent++;
-    }
-  }   
+    botao.addEventListener("click",function () {
+   let spanTexto = botao.querySelector("span");
+    let valorAtual = parseInt(spanTexto.textContent);
+    
+      spanTexto.textContent = valorAtual + 1;
+    }};
  });
   </script>
- </html>
+</body>
+</html>
        
 
   
