@@ -62,26 +62,24 @@
    <p class="artigo autor">Por: Rafaela Morais</p> 
     <p>Boas-vindas ao meu novo blog! Aqui eu irei
     compartilhar notícias sobre a Copa do Mundo.</p> 
+
+ <div class="botoes-container">
   <button> ❤️ <span>0</span></button>
   <button> 👍 <span>0</span></button>
     </div>
-     </article>
     
-    
-
-   <script>
+     <script>
     const botoes = document.querySelectorAll("button");
  
     botoes.forEach(function (botao) {
     let curtiu = false;
-    botao.addEventListener("click",function () {
+    botao.addEventListener("click", function () {
    let spanTexto = botao.querySelector("span");
     let valorAtual = parseInt(spanTexto.textContent);
-    
-      spanTexto.textContent = valorAtual + 1;
-    }};
+    spanTexto.textContent = valorAtual + 1;
+    });
  });
-  </script>
+</script>
 </body>
 </html>
        
