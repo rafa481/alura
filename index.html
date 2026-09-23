@@ -45,6 +45,11 @@
      padding: 8px 12px;
      font-size: 16px;
    }  
+     article {
+       display: flex;
+       aling-items: flex-start;
+       gap: 16px;
+     }
   </style> 
  </head>
 <body>
@@ -60,14 +65,13 @@
    <div> 
    <h2>Meu primeiro post</h2> 
    <p class="artigo autor">Por: Rafaela Morais</p> 
-    <p>Boas-vindas ao meu novo blog! Aqui eu irei
+   <p>Boas-vindas ao meu novo blog! Aqui eu irei
     compartilhar notícias sobre a Copa do Mundo.</p> 
-
- <div class="botoes-container">
-  <button> ❤️ <span>0</span></button>
-  <button> 👍 <span>0</span></button>
-    </div>
-    
+    <button> ❤️ <span>0</span></button>
+    <button> 👍 <span>0</span></button>
+ </div>
+</article>   
+</article>
      <script>
     const botoes = document.querySelectorAll("button");
  
